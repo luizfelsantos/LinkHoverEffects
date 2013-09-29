@@ -16,9 +16,9 @@ module.exports = function(grunt){
 			add_banner: {
 				options: {
 					report : "min",
-					banner: "/*! \n" +
-							" * <%= pkg.name %> \n" +
-							" * Luiz Felipe Copyright (<%= grunt.template.today(' dd-mm-yyyy, HH:MM ') %>) \n" +
+					banner: "/* \n" +
+							" * <%= pkg.name %> <%= pkg.version %> (<%= grunt.template.today(' dd/mm/yyyy, HH:MM ') %>) \n" +
+							" * Copyright (C) 2013 Luiz Felipe dos Santos \n" +
 							" */"
 				},
 				files: {
@@ -37,20 +37,6 @@ module.exports = function(grunt){
 				},
 				src: [ 'css/style.css' ]
 			}
-		},
-
-		 uglify: {
-		 	options: {
-		 		report: 'min',
-		 		banner: '/*! \n' +
-		 				' * <%= pkg.name %> <%= pkg.version %> \n' +
-		 				' */ \n'
-		 	},
-		    my_target: {
-				files: {
-					'js/script.min.js': [ 'js/script.js' ]
-				}
-		    }
 		}
 
 	});
@@ -58,7 +44,6 @@ module.exports = function(grunt){
 	// Dependences
 	grunt.loadNpmTasks( 'grunt-contrib-cssmin' );
 	grunt.loadNpmTasks( 'grunt-contrib-csslint' );
-	//grunt.loadNpmTasks( 'grunt-contrib-uglify' );
 
 	// Defaul task
 	grunt.registerTask( 'default', [ 'cssmin' ] );
