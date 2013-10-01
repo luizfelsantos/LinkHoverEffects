@@ -17,7 +17,7 @@ module.exports = function(grunt){
 				options: {
 					report : "min",
 					banner: "/* \n" +
-							" * <%= pkg.name %> <%= pkg.version %> (<%= grunt.template.today(' dd/mm/yyyy, HH:MM ') %>) \n" +
+							" * Link Hover Effects (<%= grunt.template.today(' dd/mm/yyyy, HH:MM ') %>) \n" +
 							" * Copyright (C) 2013 Luiz Felipe dos Santos \n" +
 							" */"
 				},
@@ -48,6 +48,6 @@ module.exports = function(grunt){
 	// Defaul task
 	grunt.registerTask( 'default', [ 'cssmin' ] );
 
-	// Run testes
+	// Run tests
 	grunt.registerTask( 'lint', [ 'csslint' ] );
 };

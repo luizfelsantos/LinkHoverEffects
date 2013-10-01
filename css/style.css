@@ -1,7 +1,7 @@
 body {
 	margin: 0;
 	background: #f19f0f;
-	font-family: "Open Sans";
+	font-family: "Open Sans", sans-serif;
 	color: #fff;
 	text-align: center;
 }
@@ -24,6 +24,8 @@ nav {
 }
 
 nav:nth-child(odd) {
+	position: relative;
+	z-index: 1;
 	background: #34495e;
 }
 
@@ -34,7 +36,7 @@ nav a {
 	padding: 0 20px;
 	margin-right: 20px;
 	color: #fff;
-	color: rgba( 255, 255, 255, .4);
+	color: rgba( 255, 255, 255, .4 );
 	font-size: 18px;
 	line-height: 40px;
 	text-align: center;
@@ -53,44 +55,44 @@ nav a {
 	height: 100%;
 	background: #fff;
 	opacity: 0;
-	-webkit-transform: rotate(90deg);
-	-moz-transform: rotate(90deg);
-	-ms-transform: rotate(90deg);
-	-o-transform: rotate(90deg);
-	transform: rotate(90deg);
+	-webkit-transform: rotate( 90deg );
+	   -moz-transform: rotate( 90deg );
+	    -ms-transform: rotate( 90deg );
+	     -o-transform: rotate( 90deg );
+	        transform: rotate( 90deg );
 	-webkit-transition: all .3s;
-	-moz-transition: all .3s;
-	-ms-transition: all .3s;
-	-o-transition: all .3s;
-	transition: all .3s;
+	   -moz-transition: all .3s;
+	    -ms-transition: all .3s;
+	     -o-transition: all .3s;
+	        transition: all .3s;
 }
 
 .effect1:before {
 	left: 0;
 	-webkit-transform-origin: 0 0;
-	-moz-transform-origin: 0 0;
-	-ms-transform-origin: 0 0;
-	-o-transform-origin: 0 0;
-	transform-origin: 0 0;
+	   -moz-transform-origin: 0 0;
+	    -ms-transform-origin: 0 0;
+	     -o-transform-origin: 0 0;
+	        transform-origin: 0 0;
 }
 
 .effect1:after {
 	right: 0;
 	-webkit-transform-origin: 100% 100%;
-	-moz-transform-origin: 100% 100%;
-	-ms-transform-origin: 100% 100%;
-	-o-transform-origin: 100% 100%;
-	transform-origin: 100% 100%;
+	   -moz-transform-origin: 100% 100%;
+	    -ms-transform-origin: 100% 100%;
+	     -o-transform-origin: 100% 100%;
+	        transform-origin: 100% 100%;
 }
 
 .effect1:hover::before,
 .effect1:hover::after {
 	opacity: 1;
-	-webkit-transform: rotate(0);
-	-moz-transform: rotate(0);
-	-ms-transform: rotate(0);
-	-o-transform: rotate(0);
-	transform: rotate(0);
+	-webkit-transform: rotate( 0 );
+	   -moz-transform: rotate( 0 );
+	    -ms-transform: rotate( 0 );
+	     -o-transform: rotate( 0 );
+	        transform: rotate( 0 );
 }
 
 /***/
@@ -104,10 +106,10 @@ nav a {
 	background: #fff;
 	opacity: 0;
 	-webkit-transition: all .3s;
-	-moz-transition: all .3s;
-	-ms-transition: all .3s;
-	-o-transition: all .3s;
-	transition: all .3s;
+	   -moz-transition: all .3s;
+	    -ms-transition: all .3s;
+	     -o-transition: all .3s;
+	        transition: all .3s;
 }
 
 .effect2:before {
@@ -141,27 +143,27 @@ nav a {
 	border: 2px solid #fff;
 	opacity: 0;
 	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-	-webkit-transform: scale(.5);
-	-moz-transform: scale(.5);
-	-ms-transform: scale(.5);
-	-o-transform: scale(.5);
-	transform: scale(.5);
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+	-webkit-transform: scale( .5 );
+	   -moz-transform: scale( .5 );
+	    -ms-transform: scale( .5 );
+	     -o-transform: scale( .5 );
+	        transform: scale( .5 );
 	-webkit-transition: all .3s;
-	-moz-transition: all .3s;
-	-ms-transition: all .3s;
-	-o-transition: all .3s;
-	transition: all .3s;
+	   -moz-transition: all .3s;
+	    -ms-transition: all .3s;
+	     -o-transition: all .3s;
+	        transition: all .3s;
 }
 
 .effect3:hover::before {
 	opacity: 1;
-	-webkit-transform: scale(1);
-	-moz-transform: scale(1);
-	-ms-transform: scale(1);
-	-o-transform: scale(1);
-	transform: scale(1);
+	-webkit-transform: scale( 1 );
+	   -moz-transform: scale( 1 );
+	    -ms-transform: scale( 1 );
+	     -o-transform: scale( 1 );
+	        transform: scale( 1 );
 }
 
 /***/
@@ -177,10 +179,10 @@ nav a {
 	opacity: 0;
 	pointer-events: none;
 	-webkit-transition: all .3s;
-	-moz-transition: all .3s;
-	-ms-transition: all .3s;
-	-o-transition: all .3s;
-	transition: all .3s;
+	   -moz-transition: all .3s;
+	    -ms-transition: all .3s;
+	     -o-transition: all .3s;
+	        transition: all .3s;
 }
 
 .effect4:before {
@@ -199,4 +201,32 @@ nav a {
 .effect4:hover::after {
 	top: 0;
 	opacity: 1;
+}
+
+/***/
+
+.effect5 {
+	background: #34495e;
+}
+
+.effect5:before {
+	position: absolute;
+	top: -2px;
+	left: -2px;
+	z-index: -1;
+	content: "";
+	width: 100%;
+	height: 0;
+	padding: 0 2px;
+	background: #fff;
+	-webkit-transition: all .3s;
+	   -moz-transition: all .3s;
+	    -ms-transition: all .3s;
+	     -o-transition: all .3s;
+	        transition: all .3s;
+}
+
+.effect5:hover::before {
+	height: 100%;
+	padding: 2px;
 }
