@@ -101,9 +101,9 @@
 
 			function setEffect( total ) {
 				var M = Math;
-				var indexEffect = M.max( M.random() * total, 1 );
+				var indexEffect = M.round( M.random() * total );
 
-				return 'effect-' + M.round( indexEffect );
+				return 'effect-' + M.max( indexEffect, 1 );
 			}
 		*/
 	</script>
