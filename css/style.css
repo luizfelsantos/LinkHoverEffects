@@ -232,24 +232,24 @@ nav a {
 .effect-5::before {
 	top: 0;
 	-webkit-transition: all .4s;
-	-moz-transition: all .4s;
-	-ms-transition: all .4s;
-	-o-transition: all .4s;
-	transition: all .4s;
+	   -moz-transition: all .4s;
+	    -ms-transition: all .4s;
+	     -o-transition: all .4s;
+	        transition: all .4s;
 	-webkit-transition-delay: .1s;
-	-moz-transition-delay: .1s;
-	-ms-transition-delay: .1s;
-	-o-transition-delay: .1s;
-	transition-delay: .1s;
+	   -moz-transition-delay: .1s;
+	    -ms-transition-delay: .1s;
+	     -o-transition-delay: .1s;
+	        transition-delay: .1s;
 }
 
 .effect-5::after {
 	bottom: 0;
 	-webkit-transition: all .4s;
-	-moz-transition: all .4s;
-	-ms-transition: all .4s;
-	-o-transition: all .4s;
-	transition: all .4s;
+	   -moz-transition: all .4s;
+	    -ms-transition: all .4s;
+	     -o-transition: all .4s;
+	        transition: all .4s;
 }
 
 .effect-5:hover::before,
@@ -270,10 +270,10 @@ nav a {
 	background: #fff;
 	opacity: 0;
 	-webkit-transition: all .3s;
-	-moz-transition: all .3s;
-	-ms-transition: all .3s;
-	-o-transition: all .3s;
-	transition: all .3s;
+	   -moz-transition: all .3s;
+	    -ms-transition: all .3s;
+	     -o-transition: all .3s;
+	        transition: all .3s;
 }
 
 .effect-6:hover::before {
