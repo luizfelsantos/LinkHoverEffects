@@ -59,7 +59,7 @@ nav a {
  * Effects
  */
 
-.effect-1:before {
+.effect-1::before {
 	position: absolute;
 	left: 0;
 	content: "";
@@ -93,8 +93,8 @@ nav a {
 
 /***/
 
-.effect-2:before,
-.effect-2:after {
+.effect-2::before,
+.effect-2::after {
 	position: absolute;
 	content: "";
 	width: 2px;
@@ -108,7 +108,7 @@ nav a {
 	        transition: all .3s;
 }
 
-.effect-2:before {
+.effect-2::before {
 	left: 0;
 	top: -80%;
 }
@@ -118,7 +118,7 @@ nav a {
 	opacity: 1;
 }
 
-.effect-2:after {
+.effect-2::after {
 	right: 0;
 	bottom: -80%;
 }
@@ -130,8 +130,8 @@ nav a {
 
 /***/
 
-.effect-3:before,
-.effect-3:after {
+.effect-3::before,
+.effect-3::after {
 	position: absolute;
 	top: 0;
 	content: "";
@@ -151,7 +151,7 @@ nav a {
 	        transition: all .3s;
 }
 
-.effect-3:before {
+.effect-3::before {
 	left: 0;
 	-webkit-transform-origin: 0 0;
 	   -moz-transform-origin: 0 0;
@@ -160,7 +160,7 @@ nav a {
 	        transform-origin: 0 0;
 }
 
-.effect-3:after {
+.effect-3::after {
 	right: 0;
 	-webkit-transform-origin: 100% 100%;
 	   -moz-transform-origin: 100% 100%;
@@ -181,8 +181,8 @@ nav a {
 
 /***/
 
-.effect-4:before,
-.effect-4:after {
+.effect-4::before,
+.effect-4::after {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -198,13 +198,13 @@ nav a {
 	        transition: all .3s;
 }
 
-.effect-4:before {
+.effect-4::before {
 	top: -50%;
 	border-top: 2px solid #fff;
 	border-left: 2px solid #fff;
 }
 
-.effect-4:after {
+.effect-4::after {
 	top: 50%;
 	border-right: 2px solid #fff;
 	border-bottom: 2px solid #fff;
@@ -218,8 +218,8 @@ nav a {
 
 /***/
 
-.effect-5:before,
-.effect-5:after {
+.effect-5::before,
+.effect-5::after {
 	position: absolute;
 	content: "";
 	left: 0;
@@ -229,7 +229,7 @@ nav a {
 	opacity: 0;
 }
 
-.effect-5:before {
+.effect-5::before {
 	top: 0;
 	-webkit-transition: all .4s;
 	-moz-transition: all .4s;
@@ -243,7 +243,7 @@ nav a {
 	transition-delay: .1s;
 }
 
-.effect-5:after {
+.effect-5::after {
 	bottom: 0;
 	-webkit-transition: all .4s;
 	-moz-transition: all .4s;
@@ -259,8 +259,8 @@ nav a {
 
 /***/
 
-.effect-6:before,
-.effect-6:after {
+.effect-6::before,
+.effect-6::after {
 	position: absolute;
 	content: "";
 	top: 50%;
@@ -288,7 +288,40 @@ nav a {
 
 /***/
 
-.effect-7:before {
+.effect-7::before,
+.effect-7::after {
+	position: absolute;
+	content: "";
+	left: 0;
+	width: 100%;
+	height: 0;
+	border-left: 2px solid #fff;
+	border-right: 2px solid #fff;
+	-webkit-transition: all .3s;
+	   -moz-transition: all .3s;
+	    -ms-transition: all .3s;
+	     -o-transition: all .3s;
+	        transition: all .3s;
+}
+
+.effect-7::before {
+	top: 0;
+	border-top: 2px solid #fff;
+}
+
+.effect-7::after {
+	bottom: 0;
+	border-bottom: 2px solid #fff;
+}
+
+.effect-7:hover::before,
+.effect-7:hover::after {
+	height: 40%;
+}
+
+/***/
+
+.effect-8::before {
 	position: absolute;
 	top: -2px;
 	left: -2px;
@@ -305,7 +338,7 @@ nav a {
 	        transition: all .3s;
 }
 
-.effect-7:hover::before {
+.effect-8:hover::before {
 	height: 100%;
 	padding: 2px;
 }
